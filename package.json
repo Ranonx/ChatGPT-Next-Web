@@ -4,13 +4,14 @@
   "private": false,
   "license": "Anti 996",
   "scripts": {
-    "dev": "yarn fetch && next dev",
+    "dev": "yarn fetch && next dev -H 0.0.0.0",
     "build": "yarn fetch && next build",
-    "start": "next start",
+    "start": "next start -H 0.0.0.0",
     "lint": "next lint",
     "fetch": "node ./scripts/fetch-prompts.mjs",
     "prepare": "husky install"
   },
+  
   "dependencies": {
     "@hello-pangea/dnd": "^16.2.0",
     "@svgr/webpack": "^6.5.1",
